@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$brown: #1b1010;
+$white: #efefef;
+$beige: #dfaf7a;
+$dim-beige: #936e45;
+$gray: #878787;
+
+$default-font-size: 24px;
+$font-size-1450: 15px;
+* {
+  box-sizing: border-box;
+  font-family: PT Sans Caption;
+  transition: 0.2s;
+}
+*::selection {
+  background-color: $beige;
+  color: $brown;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: $default-font-size;
+}
+@media (max-width: 1450px) {
+  body {
+    font-size: $font-size-1450;
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: $white;
+  text-decoration: none;
+}
+h1 {
+  color: $white;
+  font-family: PT Serif;
+  font-size: 5.4em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  line-height: 1em;
+  width: auto;
+  margin: 0;
+}
+p {
+  font-family: PT Sans Caption;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: $white;
+  margin: 0;
+}
+
+.accent-btn {
+  background: linear-gradient(
+    95.5deg,
+    rgba(223, 175, 122, 0.87) 16.9%,
+    rgba(231, 162, 97, 0.87) 86.65%,
+    rgba(211, 144, 70, 0.87) 86.65%
+  );
+  backdrop-filter: blur(28px);
+  border-radius: 76px;
+  padding: 14px 24px;
+  color: $brown;
+  display: inline-block;
+  font-family: PT Sans Caption;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  border: 4px solid transparent;
+  &:hover {
+    background: none;
+    color: $white;
+    border: 4px solid $white;
+  }
+  &:active {
+    color: $gray;
+    border: 4px solid $gray;
+  }
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  background-color: $brown;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $beige;
+  border-radius: 9em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #936e45;
+}
