@@ -574,6 +574,9 @@ body {
   .main {
     padding: 0 50px;
     padding-top: 148px;
+    &__text-block{
+      padding: 0 50px;
+    }
   }
 }
 
@@ -682,7 +685,7 @@ body {
     }
   }
 }
-@media (max-width: 1555px) {
+@media (max-width: 1655px) {
   .social-block {
     display: none;
   }
