@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 $brown: #1b1010;
@@ -60,10 +60,10 @@ p {
 
 .accent-btn {
   background: linear-gradient(
-    95.5deg,
-    rgba(223, 175, 122, 0.87) 16.9%,
+    95deg,
+    rgba(223, 175, 122, 0.87) 0%,
     rgba(231, 162, 97, 0.87) 86.65%,
-    rgba(211, 144, 70, 0.87) 86.65%
+    rgba(211, 144, 70, 0.87) 100%
   );
   backdrop-filter: blur(28px);
   border-radius: 76px;

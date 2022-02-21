@@ -271,7 +271,7 @@ body {
       bottom: -50px;
       .why-are-we-block__text-container {
         bottom: 0;
-        right: 0;
+        left: 40px;
       }
     }
     &:nth-child(3) {
@@ -291,7 +291,7 @@ body {
     margin-top: 60px;
     overflow-x: hidden;
     padding: 0 130px;
-    @media (max-width: 1400px) {
+    @media (max-width: 1600px) {
       display: block;
     }
     &__wrap {
@@ -319,7 +319,7 @@ body {
     background-repeat: no-repeat;
     height: 1100px;
     margin-top: 100px;
-    @media (max-width: 1400px) {
+    @media (max-width: 1600px) {
       display: none;
     }
   }
@@ -400,6 +400,8 @@ body {
     background: #2d1b1b;
     border-radius: 25px;
     height: 466px;
+    display: flex;
+    align-items: center;
     img {
       max-width: 100%;
     }
@@ -407,6 +409,7 @@ body {
   &__price {
     font-size: 1.5em;
     color: $white;
+    padding-left: 20px;
   }
   &__description {
     color: $white;
@@ -414,6 +417,7 @@ body {
     font-size: 1em;
     font-weight: normal;
     margin-bottom: 15px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 730px) {
@@ -538,7 +542,11 @@ body {
     }
   }
 }
-
+@media (max-width: 600px) {
+  .why-are-we-block__text-container{
+    font-size: 18px !important;
+  }
+}
 .slider-arrow {
   color: #342020;
   :hover {
